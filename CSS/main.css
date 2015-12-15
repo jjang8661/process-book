@@ -1,0 +1,168 @@
+/* Your stylesheet goes here */
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+body {
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	background-color: rgba(255,165,0,0.1);
+}
+
+.diffDiv {
+	background-color: rgba(255,165,0,0.3);
+}
+
+.caption {
+	margin-left: 200px;
+	text-align: center;
+	width: 800px;
+	font-weight: 400;
+	margin-bottom :2em;
+}
+
+.caption3 {
+	margin-left: 150px;
+	text-align: center;
+	width: 900px;
+	font-weight: 400;
+	margin-bottom: 2em;
+}
+
+.captionBig {
+	margin-left: 90px;
+	text-align: center;
+	width:1000px;
+	font-weight: 400;
+	margin-bottom: 2em;
+}
+
+footer {
+	background-color: rgba(255,165,0,0.7);
+	border-top: 3px solid #d87e28;
+    clear: right;
+	font-size: 12px;
+	padding: 1em;
+}
+
+h1, h2, h3{
+   font-family: "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+h2{
+	color: #bc6026;
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+h3 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.profilePic {
+	margin: 1em;
+	margin-left: 7.5em;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    background-position: 50%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+hr {
+	border-color: #bc6026;
+	margin: 50px;
+}
+.picBox {
+	margin-top: 1em;
+ text-align: center;
+}
+
+.pictures {
+	width: 400px;
+	height: 300px;
+	margin-bottom: 1em;
+}
+
+.pictures3 {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 1em;
+}
+iframe {
+	margin-bottom: 2em;
+}
+
+
+.onePic {
+	margin-top: 1em;
+	width: 800px;
+	margin-bottom: 2em;
+}
+
+.onePicBig {
+	margin-top: 1em;
+	width: 1000px;
+	margin-bottom: 2em;
+}
+
+#protoSec {
+	margin-top: 5em;
+}
+#header {
+	background-image: url("../images/banner.png");
+	background-size: 100% 102%;
+	background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+#intro {
+	min-height: 300px;
+}
+
+.desc {
+	margin-bottom: 2em;
+}
+
+nav {
+	background-color: rgba(255,165,0,0.8);
+    font-size: 16px;
+/*    font-variant: small-caps;
+    position: fixed;
+    */
+    z-index: 1;
+    min-height: 20px;
+    width: 100%;
+    padding-top: 0.5em;
+}
+
+nav li {
+    display:inline;
+    margin: 0.5em;
+    font-weight: 500;
+}
+
+nav a:link, nav a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+}
+
+ul img {
+	width: 25px;
+}
+
+.active {
+   color: white;
+   font-weight: bold;
+}
+a.active:link, a.active:visited {
+	color: white;
+}
+
