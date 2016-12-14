@@ -1,39 +1,28 @@
 'use strict'
 
-$(document).ready(function() { 
+$(function() {
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
     })
 
-	 
-	 $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    // $('a[href^="#"]').on('click', function (e) {
-    //     e.preventDefault();
-    //     $(document).off("scroll");
-        
-    //     $('a').each(function () {
-    //         $(this).removeClass('active');
-    //     })
-    //     $(this).addClass('active');
-      
-    //     var target = this.hash,
-    //         menu = target;
-    //     $target = $(target);
-    //     $('html, body').stop().animate({
-    //         'scrollTop': $target.offset().top+2
-    //     }, 500, 'swing', function () {
-    //         window.location.hash = target;
-    //         $(document).on("scroll", onScroll);
-    //     });
-    // });
+   $(document).on("scroll", onScroll);
+ 
 })
 
 
 function onScroll(event){
+
     var scrollPos = $(document).scrollTop();
+
+    if (scrollPos > 10) {
+      $('.navbar-fixed-top').addClass("navLine");
+      $('#menu-center ul img').addClass("smallImg")
+    } else {
+      $('.navbar-fixed-top').removeClass("navLine");
+      $('#menu-center ul img').removeClass("smallImg")
+    }
+
     $('#menu-center a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
@@ -45,4 +34,5 @@ function onScroll(event){
             currLink.removeClass("active");
         }
     });
+
 }
